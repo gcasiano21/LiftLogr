@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -14,5 +15,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/cardioButton"
+        android:layout_width="104dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="1dp"
+        android:text="Cardio"
+        app:layout_constraintBottom_toTopOf="@+id/nutritionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/nutritionButton"
+        android:layout_width="104dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="1dp"
+        android:text="Nutrition"
+        app:layout_constraintBottom_toTopOf="@+id/liftingButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardioButton" />
+
+    <Button
+        android:id="@+id/liftingButton"
+        android:layout_width="104dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="124dp"
+        android:text="Lifting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nutritionButton" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
