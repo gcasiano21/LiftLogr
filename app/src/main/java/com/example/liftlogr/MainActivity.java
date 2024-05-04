@@ -6,18 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
-    ImageButton cardio ;
-    ImageButton nutrition;
+    Button cardio;
+    Button lifting;
+    Button nutrition;
 
-    ImageButton lifting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //cardio = findViewById(R.id.cardioButton);
+        cardio = findViewById(R.id.cardioButton);
         cardio.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-        //lifting = findViewById(R.id.liftingButton);
+        lifting = findViewById(R.id.liftingButton);
         lifting.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        //nutrition = findViewById(R.id.nutritionButton);
+        nutrition = findViewById(R.id.nutritionButton);
         nutrition.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
