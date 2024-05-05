@@ -15,22 +15,58 @@
         android:layout_marginBottom="685dp"
         android:rotation="90"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/liftingTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/arrow_down_float" />
-    <TextView
-        android:id="@+id/liftingTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="185dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginBottom="664dp"
-        android:text="Lifting"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="Enter Your Lifts"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextLiftName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Lift Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/editTextSets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Sets"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextReps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Reps"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonAddLift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Lift" />
+
+        <LinearLayout
+            android:id="@+id/checkListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
