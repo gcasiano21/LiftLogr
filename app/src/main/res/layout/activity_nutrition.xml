@@ -5,26 +5,51 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".Nutrition">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food and Calorie Tracker"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Food Name"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/editTextCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Calories"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/buttonAddFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Food"/>
+
+        <TextView
+            android:id="@+id/textViewTotalCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Calories: 0"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
 
 
-<Button
-    android:id="@+id/button2"
-    android:layout_width="129dp"
-    android:layout_height="70dp"
-    android:layout_marginStart="141dp"
-    android:layout_marginEnd="141dp"
-    android:layout_marginBottom="62dp"
-    android:text="Quick Add"
-    tools:layout_editor_absoluteX="148dp"
-    tools:layout_editor_absoluteY="648dp" />
-
-
-<com.google.android.material.textfield.TextInputEditText
-    android:layout_width="142dp"
-    android:layout_height="47dp"
-    android:hint="Input Calories"
-    tools:layout_editor_absoluteX="134dp"
-    tools:layout_editor_absoluteY="592dp" />
+    </LinearLayout>
 
 <ImageButton
     android:id="@+id/backButtonNutrition"

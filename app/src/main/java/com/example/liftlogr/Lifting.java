@@ -47,6 +47,7 @@ public class Lifting extends AppCompatActivity {
         buttonAddLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 addLift();
             }
         });
