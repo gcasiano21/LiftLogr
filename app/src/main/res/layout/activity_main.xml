@@ -4,75 +4,76 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Lift Logr!"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:text="LiftLogr"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.092" />
+        app:layout_constraintVertical_bias="0.024" />
 
     <Button
         android:id="@+id/cardioButton"
-        android:layout_width="104dp"
+        android:layout_width="106dp"
         android:layout_height="47dp"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="87dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/buttoncolor"
         android:text="Cardio"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/nutritionButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/liftingButton" />
 
     <Button
         android:id="@+id/nutritionButton"
         android:layout_width="106dp"
         android:layout_height="47dp"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/buttoncolor"
         android:text="Nutrition"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.936" />
+        app:layout_constraintTop_toBottomOf="@+id/cardioButton" />
 
     <Button
         android:id="@+id/liftingButton"
-        android:layout_width="104dp"
+        android:layout_width="106dp"
         android:layout_height="47dp"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginBottom="124dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/buttoncolor"
         android:text="Lifting"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardioButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fitness and Nutrition Tracker"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -85,24 +86,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Click a button below to navigate"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.723" />
+        app:layout_constraintVertical_bias="0.674" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="411dp"
+        android:layout_height="353dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.367"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/dumbbell_weight_training_physical_fitness_exercise_drawing_dumbbell_d4ad121d8900a71d8adfbdc51d18e8ba" />
 
 
