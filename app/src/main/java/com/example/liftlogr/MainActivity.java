@@ -18,7 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         cardio = findViewById(R.id.cardioButton);
+        lifting = findViewById(R.id.liftingButton);
+        nutrition = findViewById(R.id.nutritionButton);
+
         cardio.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -29,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-        lifting = findViewById(R.id.liftingButton);
         lifting.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -40,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-
-        nutrition = findViewById(R.id.nutritionButton);
         nutrition.setOnClickListener(
                 new View.OnClickListener() {
                     @Override

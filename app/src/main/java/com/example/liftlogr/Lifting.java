@@ -17,17 +17,21 @@ public class Lifting extends AppCompatActivity {
     private EditText editTextLiftName, editTextSets, editTextReps;
     private Button buttonAddLift;
     private LinearLayout checkListLayout;
-
     private ArrayList<String> lifts = new ArrayList<>();
-
-
     private ImageButton backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lifting);
+
         backButton = findViewById(R.id.backButtonLifting);
+        editTextLiftName = findViewById(R.id.editTextLiftName);
+        editTextSets = findViewById(R.id.editTextSets);
+        editTextReps = findViewById(R.id.editTextReps);
+        buttonAddLift = findViewById(R.id.buttonAddLift);
+        checkListLayout = findViewById(R.id.checkListLayout);
+
         backButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -38,16 +42,9 @@ public class Lifting extends AppCompatActivity {
                     }
                 }
         );
-        editTextLiftName = findViewById(R.id.editTextLiftName);
-        editTextSets = findViewById(R.id.editTextSets);
-        editTextReps = findViewById(R.id.editTextReps);
-        buttonAddLift = findViewById(R.id.buttonAddLift);
-        checkListLayout = findViewById(R.id.checkListLayout);
-
         buttonAddLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 addLift();
             }
         });

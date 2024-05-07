@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.Button;
 import android.widget.EditText;
@@ -20,10 +19,6 @@ public class Nutrition extends AppCompatActivity {
     private EditText editTextFoodName, editTextCalories;
     private Button buttonAddFood;
     private TextView textViewTotalCalories;
-    private ArrayList<String> food = new ArrayList<>();
-    private LinearLayout checkListLayout;
-
-
     private int totalCalories = 0;
 
     @Override
@@ -52,7 +47,7 @@ public class Nutrition extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 addFood();
-                //addFoodList();
+
             }
         });
     }
@@ -63,25 +58,9 @@ public class Nutrition extends AppCompatActivity {
         if (!foodName.isEmpty() && !caloriesStr.isEmpty()) {
             int calories = Integer.parseInt(caloriesStr);
             totalCalories += calories;
-
             textViewTotalCalories.setText("Total Calories: " + totalCalories);
-
             editTextFoodName.setText("");
             editTextCalories.setText("");
         }
     }
-    /*private void addFoodList() {
-        String foodName = editTextFoodName.getText().toString();
-        String calories = editTextCalories.getText().toString();
-
-        String foodDetails = foodName + " - Calories: " + calories;
-        food.add(foodDetails);
-
-        CheckBox checkBox = new CheckBox(this);
-        checkBox.setText(foodDetails);
-        checkListLayout.addView(checkBox);
-
-        editTextFoodName.setText("");
-        editTextCalories.setText("");
-    }*/
 }
