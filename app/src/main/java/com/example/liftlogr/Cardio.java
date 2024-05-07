@@ -6,17 +6,26 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.widget.TextView;
 
 public class Cardio extends AppCompatActivity {
 
-        ImageButton backButton;
+        private ImageButton backButton;
+        private TextView stepCountTextView;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardio);
+
+        stepCountTextView = findViewById(R.id.stepCountTextView);
         backButton = findViewById(R.id.backButtonCardio);
-        backButton.setOnClickListener(
+
+            backButton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -25,6 +34,14 @@ public class Cardio extends AppCompatActivity {
                         startActivity(i);
                     }
                 }
+
         );
     }
+    public void onSensorChanged(SensorEvent event) {
+        if (event.sensor.getType() == Sensor.TYPE_STEP_COUNTER) {
+            int stepCount = (int) event.values[0];
+            stepCountTextView.setText("Steps: " + stepCount);
+        }
+    }
 }
+
