@@ -102,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/dumbbell_weight_training_physical_fitness_exercise_drawing_dumbbell_d4ad121d8900a71d8adfbdc51d18e8ba" />
+        app:srcCompat="@drawable/output_onlinepngtools" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

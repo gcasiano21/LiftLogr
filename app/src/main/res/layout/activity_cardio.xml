@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.599" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/mileButton"
         android:layout_width="129dp"
         android:layout_height="70dp"
         android:layout_marginStart="141dp"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/twoMileButton"
         android:layout_width="129dp"
         android:layout_height="70dp"
         android:layout_marginStart="141dp"
@@ -95,7 +95,7 @@
         app:layout_constraintVertical_bias="0.164" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/fiveKMButton"
         android:layout_width="129dp"
         android:layout_height="70dp"
         android:layout_marginStart="141dp"

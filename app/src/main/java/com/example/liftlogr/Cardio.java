@@ -40,7 +40,7 @@ public class Cardio extends AppCompatActivity {
                 }
 
         );
-            mile = findViewById(R.id.button4);
+            mile = findViewById(R.id.mileButton);
 
             mile.setOnClickListener(
                     new View.OnClickListener() {
@@ -53,7 +53,7 @@ public class Cardio extends AppCompatActivity {
                     }
 
             );
-            twoMile = findViewById(R.id.button3);
+            twoMile = findViewById(R.id.twoMileButton);
 
             twoMile.setOnClickListener(
                     new View.OnClickListener() {
@@ -66,7 +66,7 @@ public class Cardio extends AppCompatActivity {
                     }
 
             );
-            fiveKM = findViewById(R.id.button);
+            fiveKM = findViewById(R.id.fiveKMButton);
 
             fiveKM.setOnClickListener(
                     new View.OnClickListener() {
