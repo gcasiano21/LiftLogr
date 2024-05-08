@@ -16,10 +16,7 @@ public class mile extends AppCompatActivity {
     private Button startButton;
     private Button pauseButton;
     private ImageButton backButton;
-    /*private CountDownTimer countDownTimer;
-    private final long startTimeInMillis = 60000;
-    private long timeLeftInMillis = startTimeInMillis;
-    private boolean timerRunning = false;*/
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,36 +54,5 @@ public class mile extends AppCompatActivity {
         });*/
     }
 
-    /*private void startTimer() {
-        countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-                timeLeftInMillis = millisUntilFinished;
-                updateTimer();
-            }
 
-            @Override
-            public void onFinish() {
-                timerRunning = false;
-                startButton.setText("Start Timer");
-            }
-        }.start();
-
-        timerRunning = true;
-        startButton.setText("Pause Timer");
-    }
-
-    private void pauseTimer() {
-        countDownTimer.cancel();
-        timerRunning = false;
-        startButton.setText("Start Timer");
-    }
-
-    private void updateTimer() {
-        int minutes = (int) (timeLeftInMillis / 1000) / 60;
-        int seconds = (int) (timeLeftInMillis / 1000) % 60;
-
-        String timeLeftFormatted = String.format("%02d:%02d", minutes, seconds);
-        timerTextView.setText(timeLeftFormatted);
-    }*/
 }
