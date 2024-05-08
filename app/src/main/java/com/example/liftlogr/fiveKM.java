@@ -17,7 +17,7 @@ public class fiveKM extends AppCompatActivity {
     private Button pauseButton;
     private ImageButton backButton;
     private CountDownTimer countDownTimer;
-    private final long startTimeInMillis = 60000; // 1 minute
+    private final long startTimeInMillis = 60000;
     private long timeLeftInMillis = startTimeInMillis;
     private boolean timerRunning = false;
 
