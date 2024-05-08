@@ -12,29 +12,16 @@
         android:id="@+id/stepCountTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select a distance for a goal:"
+        android:text="Press start when ready!"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="129dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="141dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="192dp"
-        android:background="@color/buttoncolor"
-        android:text="1 Mile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintVertical_bias="0.177" />
 
     <Button
         android:id="@+id/button3"
@@ -44,7 +31,7 @@
         android:layout_marginEnd="141dp"
         android:layout_marginBottom="112dp"
         android:background="@color/buttoncolor"
-        android:text="2 Mile"
+        android:text="Start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -67,7 +54,7 @@
         android:id="@+id/cardioTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cardio"
+        android:text="2 Mile"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -79,21 +66,6 @@
         app:layout_constraintVertical_bias="0.024" />
 
 
-    <TextView
-        android:id="@+id/stepCountTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Steps: 0"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="129dp"
@@ -102,7 +74,7 @@
         android:layout_marginEnd="141dp"
         android:layout_marginBottom="32dp"
         android:background="@color/buttoncolor"
-        android:text="5K"
+        android:text="Pause"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
