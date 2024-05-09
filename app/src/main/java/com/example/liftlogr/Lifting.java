@@ -60,6 +60,7 @@ public class Lifting extends AppCompatActivity {
 
         CheckBox checkBox = new CheckBox(this);
         checkBox.setText(liftDetails);
+        checkBox.setTextColor(getResources().getColor(R.color.white));
         checkListLayout.addView(checkBox);
 
         editTextLiftName.setText("");
@@ -67,4 +68,5 @@ public class Lifting extends AppCompatActivity {
         editTextReps.setText("");
     }
 }
+
 

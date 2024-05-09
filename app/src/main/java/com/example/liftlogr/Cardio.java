@@ -47,7 +47,7 @@ public class Cardio extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent i = new
-                                    Intent(Cardio.this, mile.class);
+                                    Intent(Cardio.this,mileGoal.class);
                             startActivity(i);
                         }
                     }
@@ -60,7 +60,7 @@ public class Cardio extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent i = new
-                                    Intent(Cardio.this, twoMile.class);
+                                    Intent(Cardio.this, twoMileGoal.class);
                             startActivity(i);
                         }
                     }
@@ -73,7 +73,7 @@ public class Cardio extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             Intent i = new
-                                    Intent(Cardio.this, fiveKM.class);
+                                    Intent(Cardio.this, fiveKMGoal.class);
                             startActivity(i);
                         }
                     }
